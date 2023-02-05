@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>ChessBoard</title>   
+</head>
+<style>
+table{
+width:650; height:500;
+ max-width:100%;
+max-height:100%;
+border:10px solid black;
+}
+h1{
+font-family:algerian;
+font-size:50px;
+color:black;
+text-align:center;
+}
+
+
+</style>
+
+
+<body bgcolor="gray">
+<h1><u>CHESS BOARD IN JAVASCRIPT</u>👑👸🏼</h1>
+ 
+    <script>
+        document.write("<table border='6'align='center' cellpadding='32'cellspacing='0'>");
+        for (var i = 1; i <= 8; i++) {
+            document.write("<tr>");
+            for (var j = 1; j <= 8; j++) {
+                if ((i + j) % 2 != 0) {
+                    document.write("<td bgcolor='white'></td>");
+                }
+                else {
+                    document.write("<td bgcolor='black'></td>");
+                }
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+    </script>
+</body>
+</html>
